@@ -22,11 +22,24 @@ public class TimeV1 {
     public String toString() {
         String output = "";
         if (am) {
-
+            output += getHours() + ":";
+        } else {
+            output += getHours() + 12 + ":";
+        }
+        if (getMinutes() < 10) {
+            output += "0" + getMinutes() + ":";
+        } else {
+            output += getMinutes() + ":";
+        }
+        if (getSeconds() < 10) {
+            output += "0" + getSeconds();
+        } else {
+            output += getSeconds();
         }
         return output;
     }
     public static void main(String[] args) {
-        
+        TimeV1 test = new TimeV1(7, 2, 0, false);
+        System.out.println(test);
     }
 }
