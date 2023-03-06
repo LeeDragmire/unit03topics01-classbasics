@@ -1,7 +1,9 @@
 public class TimeV2 {
     private int allData;
 
+    // TODO: again, constructor should have 3 arguments
     public TimeV2(int curHours, int curMinutes, int curSeconds, boolean isAM) {
+        // TODO: this totally works, and uses the same philosophy as the Student example I did in class. However, in the README you were asked for your one instance variable to represent the total number of seconds since midnight (which your allData variable doesn't). Try recoding with that representation for practice. Do you have any thoughts about the advantages/disadvantages of each representation?
         allData = 0;
         allData += curHours;
         //7
