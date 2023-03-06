@@ -4,6 +4,7 @@ public class TimeV1 {
     private int seconds;
     private boolean am;
 
+    // TODO: I think the example I gave was confusing, but your constructor should only have 3 arguments. There is no need for the isAM boolean as the client should use "military time" with the constructor
     public TimeV1(int curHours, int curMinutes, int curSeconds, boolean isAM) {
         hours = curHours;
         minutes = curMinutes;
