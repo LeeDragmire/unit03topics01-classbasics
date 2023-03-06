@@ -31,6 +31,7 @@ public class Date {
         } else{
             output += getMonth() + "/";
         }
+        // TODO: doesn't ensure the year is always 4 digits long and pad with zeros when necessary
         output += getYear();
         return output;
     }
